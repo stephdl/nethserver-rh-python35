@@ -1,0 +1,14 @@
+#!/bin/bash
+COMMAND=$@
+if [[ $COMMAND == '' ]]; then
+echo 'usage: 
+- Enable python3.6 for the session in terminal
+    python35 bash
+
+- Launch a script with python35
+    python35 /path/to/script
+'
+exit 0
+fi
+
+scl enable rh-python35 "$COMMAND"
