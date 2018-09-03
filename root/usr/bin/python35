@@ -2,7 +2,7 @@
 COMMAND=$@
 if [[ $COMMAND == '' ]]; then
 echo 'usage: 
-- Enable python3.6 for the session in terminal
+- Enable python35 for the session in terminal
     python35 bash
 
 - Launch a script with python35
